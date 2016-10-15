@@ -1,4 +1,7 @@
-# express_guestbookdemo
+# Express.js Guestbook (express_guestbookdemo)
+
+Please clone this project to your project:
+`git clone https://github.com/tramel-woodard/express_guestbookdemo`
 
 Welcome to my demo of the Express mainframe that can be found in the book 'Express in Action'.
 
