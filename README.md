@@ -1,4 +1,4 @@
-[![N|Solid](http://tramelwoodard:8888/public/images/global/tlw_icon.png)](http://tramelwoodard.com)
+![Tramel Woodard](http://tramelwoodard.com/images/global/tlw_icon.png "Tramel Woodard")
 # Express.js Guestbook
 This repository is a two-page guestbook demo running Express.js middleware on a Node.js server.
 
