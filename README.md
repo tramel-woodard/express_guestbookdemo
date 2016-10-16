@@ -1,24 +1,47 @@
-# Express.js Guestbook (express_guestbookdemo)
+[![N|Solid](http://tramelwoodard:8888/public/images/global/tlw_icon.png)](http://tramelwoodard.com)
+# Express.js Guestbook
+This repository is a two-page guestbook demo running Express.js middleware on a Node.js server.
 
-Please clone this project to your project:
-`git clone https://github.com/tramel-woodard/express_guestbookdemo`
+There are two main pages in this demo. The 'index' page where you may view current guestbook messages and a 'new-entry' page, where you may add your own message. Both pages are being served using the EJS (Extended JavaScript) template system.
 
-Welcome to my demo of the Express mainframe that can be found in the book 'Express in Action'.
+### Installation
+Clone the git repository to your local directory, change to the 'express_guestbookdemo' directory and install all dependencies from the package.json file using the 'npm install' command:
+```sh
+$ git clone git@github.com:tramel-woodard/express_guestbookdemo.git
+$ cd express_guestbookdemo
+$ npm install
+```
 
-This demo is for anyone who's getting their feet wet with Node.js, Express.js and aren't sure how to put the two technologies together for view in a browser.
+### Installed Node Depedencies
+The following Node modules have been installed from the package.json file in order to provide functionality to the guestbook:
 
-The main bridge you may be missing (or unable to articulate in your code) is the 'view engine' function of Express.js, which allows you to assign a 'public' folder (in this case our 'views' folder) and connect a given url (localhost:3000/views/yourfile) to a file that you've actually filled with your website design code (localhost:3000/views/yourfile.ejs).
+* [body-parser] - Node.js body parsing middleware
+* [EJS] - Embedded JavaScript templates
+* [Express] - Node.js web application framework
+* [Morgan] - HTTP request logger middleware for node.js
 
-In this sense, all of the pages you would use with traditional HTML (localhost:3000/public/about.html, localhost:3000/public/contact.html, etc.) are now placed in a 'views' folder and your HTML pages will now be rendered using Extended JavaScript (ejs) files (localhost:3000/views/about.ejs, localhost:3000/views/contact.ejs, etc.).
+   [body-parser]: <https://github.com/expressjs/body-parser>
+   [EJS]: <https://github.com/joemccann/dillinger.git>
+   [Express]: <https://github.com/expressjs>
+   [Morgan]: <http://twitter.com/thomasfuchs>
 
-Please keep in mind because the '.ejs' extension will be removed (as well as the 'views' directory being invisible on the browser level), each page will appear to be it's own 'directory' (keeping in presentation principle with a 'Single Page' or 'Template' style application):
+#### Running the Demo
+Run the following command (in Terminal for Mac or Command Prompt for Windows) to launch the Guestbook demo:
+```sh
+$ npm start
+```
+Finally, open your preferred browser and visit the following URL:
+```sh
+http://localhost:3000
+```
+### Development
+This is an open-sourced project. Please feel free to contribute. Code must use
 
-http://localhost:3000/ (home page)
-http://localhost:3000/new-entry (add message page)
+### Todos
+ - Individual Edit Capability for Messages
+ - Possible conversion from JSON storage to MongoDB
+ - Creation of Unit Test
 
-This demo is meant to be fairly simple and uncomplicated, so those new to the MEAN stack or Express.js and third-party modules will have a chance to thoroughly digest all components.
-
-Enjoy!
-
-
-Tramel Woodard
+License
+----
+ISC (License dependent upon individual node packages)
