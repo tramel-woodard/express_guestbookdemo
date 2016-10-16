@@ -12,6 +12,16 @@ $ cd express_guestbookdemo
 $ npm install
 ```
 
+#### Running the Demo
+Run the following command (in Terminal for Mac or Command Prompt for Windows) to launch the Guestbook demo:
+```sh
+$ npm start
+```
+Finally, open your preferred browser and visit the following URL:
+```sh
+http://localhost:3000
+```
+
 ### Installed Node Depedencies
 The following Node modules have been installed from the package.json file in order to provide functionality to the guestbook:
 
@@ -25,15 +35,6 @@ The following Node modules have been installed from the package.json file in ord
    [Express]: <https://github.com/expressjs>
    [Morgan]: <http://twitter.com/thomasfuchs>
 
-#### Running the Demo
-Run the following command (in Terminal for Mac or Command Prompt for Windows) to launch the Guestbook demo:
-```sh
-$ npm start
-```
-Finally, open your preferred browser and visit the following URL:
-```sh
-http://localhost:3000
-```
 ### Development
 This is an open-sourced project. Please feel free to contribute. Code must use
 
