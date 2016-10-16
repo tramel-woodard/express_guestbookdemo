@@ -40,19 +40,19 @@ app.get("/new-entry", function(req, res) {
 });
 
 // when posting '/new-entry' page (submit form to add new comment), callback function will confirm
-// req.body.title (title of message) and req.body.body (body of message) both have a value.
+// req.body.title (title of message) and req.body.content (content of message) both have a value.
 // if neither have value, a '404' status will be sent to user along with a message to add both title
 // and body value. If title and value contain values, message will be pushed to 'entries' array,
 // with title, content and published (automatic Date() created) values. User then redirected to
 // "/" (home page).
 app.post("/new-entry", function(req, res) {
-    if (!req.body.title || !req.body.body) {
+    if (!req.body.title || !req.body.content) {
         res.status(400).send("Entries must have a title and a body.");
         return;
     }
     entries.push({
         title: req.body.title,
-        content: req.body.body,
+        content: req.body.content,
         published: new Date()
     });
     res.redirect("/");
