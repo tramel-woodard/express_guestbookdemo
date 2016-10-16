@@ -42,6 +42,5 @@ This is an open-sourced project. Please feel free to contribute. Code must use
  - Possible conversion from JSON storage to MongoDB
  - Creation of Unit Test
 
-License
-----
+### License
 ISC (License dependent upon individual node packages)
