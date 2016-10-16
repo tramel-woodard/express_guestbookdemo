@@ -14,7 +14,7 @@ $ npm install
 ```
 
 
-#### Running the Demo
+### Running the Demo
 Run the following command (in Terminal for Mac or Command Prompt for Windows) to launch the Guestbook demo:
 ```sh
 $ npm start
